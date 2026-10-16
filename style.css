@@ -30,14 +30,15 @@ button {
 }
 
 /* Scrivi qui sotto i tuoi stili */
-header{
+#header{
   position: sticky; top: 0;
+  width: 100%;
 }
+
 .divH {
   background-color: #131921;
   height: 51px;
   padding: 10px 18px;
-  white-space: nowrap;
 }
 
 h1 {
@@ -125,6 +126,7 @@ text-decoration: underline;
 }
 .categorie {
   margin: 30px 18px;
+   padding-left: 7%
 }
 
 .categorie h2 {
@@ -160,6 +162,9 @@ text-decoration: underline;
   color: #fff;
   text-align: center;
   font-weight: bold;
+}
+.titoloCategoria:hover{
+  margin-top: -5px;
 }
 
 .BCe .titoloCategoria {
@@ -207,56 +212,85 @@ text-decoration: underline;
   text-decoration: underline;
   color: #c7511f;
 }
-
-.prodotti h2{
-  margin: 15px;
+.prodotti {
+  padding: 0 6%;
+  font-size: 0;
 }
-.prodotti div{
+
+.prodotti h2 {
+  margin: 15px 0;
+  padding: 0;
+  font-size: 24px;
+  padding-left: 6%;
+}
+
+.prodotti .oggetti {
   display: inline-block;
-  width: 19%;
-  height: 100%; 
+  vertical-align: top;
+  width: 23%;
+  height: 280px;
+  margin: 1%;
+  padding: 12px;
+  border: 1px solid #ddd;
   border-radius: 8px;
   text-align: center;
-  margin: 10px;
-  overflow: auto;
+  overflow: hidden;
   font-size: 40px;
-  padding: 8px;
-}
-div h4{
-   font-size: 13px;
-   text-align: left;
-
 }
 
-.star {
+.prodotti .oggetti .NI {
+  display: block;
+  background-color: #EEEEEE;
+  margin: -12px -12px 12px -12px;
+  text-align: center;
+  font-size: 40px;
+  
+}
+
+.prodotti .oggetti h4 {
+  font-size: 13px;
+  text-align: left;
+  padding: 3% 0 0;
+  height:45px;
+}
+
+.prodotti .oggetti .star {
   font-size: 10px;
   color: #FF9900;
   text-align: left;
-  margin: 5px;
+  margin: 5px 0;
+  padding: 0;
+  height: 15px;
 }
-.Valutazione{
+
+.prodotti .oggetti .Valutazione {
   color: blue;
+  padding-left: 6%;
 }
-.prezzo{
+
+.prodotti .oggetti .prezzo {
   text-align: left;
   font-size: 16px;
   color: red;
   font-weight: 600;
+  padding: 0;
+  margin: 8px 0;
+  height: 20px;
 }
-.prodotti button{
+
+.prodotti .oggetti button {
+  display: inline-block;
   background-color: #FFD814;
   font-size: 16px;
-  border:1px solid #FFD814;
+  border: 1px solid #FFD814;
   border-radius: 16px;
-  padding:3px 10px;
-  text-align: center;
-  margin-bottom:60px;
+  padding: 6px 16px;
+  margin: 10px auto;
 }
 footer {
   background-color: #232F3E;
   width: 100%;
   padding: 40px 0;
-  box-sizing: border-box;
   color: white;
   font-size: 14px;
   text-align: center;
@@ -312,4 +346,29 @@ footer td a {
 
 footer td a:hover {
   text-decoration: underline;
+}
+
+#h22 {
+  text-align: center;
+  padding-bottom:20px;
+}
+#grigliaProdotti {
+
+  margin: 16px;
+  padding: 16px;
+    text-align: center;
+}
+#grigliaProdotti table {
+    margin: 0 auto;
+      border: 3px solid #d8980ef1;
+       box-shadow: 0px 0px 10px #201313a4;
+      border-radius: 8px;
+}
+#grigliaProdotti th{
+  background-color: #007185;
+}
+
+#grigliaProdotti tbody tr:nth-child(even) {
+    background-color: #007185;
+    box-shadow: 0px 0px 10px #a2bfc0f1;
 }
